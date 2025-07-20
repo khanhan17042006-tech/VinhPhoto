@@ -1,0 +1,116 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  background: #181818;
+  color: #ededed;
+}
+header {
+  background: #222;
+  color: #fff;
+  padding: 2em 0 1em 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  letter-spacing: 2px;
+}
+header nav a {
+  color: #ededed;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+header nav a:hover {
+  color: #bdbdbd;
+}
+section {
+  padding: 2em 1em;
+  max-width: 900px;
+  margin: 2em auto;
+  background: #232323;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+}
+h2 {
+  color: #ededed;
+  margin-bottom: 0.7em;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2em;
+}
+.grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.2);
+  border: 4px solid #232323;
+  transition: transform 0.2s, border-color 0.2s;
+  background: #181818;
+}
+.grid img:hover {
+  transform: scale(1.04) rotate(-2deg);
+  border-color: #bdbdbd;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 0.8em;
+  font-weight: 500;
+  color: #ededed;
+}
+input, textarea {
+  padding: 0.5em;
+  margin-top: 0.2em;
+  border: 1.5px solid #444;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #2c2c2c;
+  color: #ededed;
+}
+button {
+  margin-top: 1em;
+  padding: 0.9em;
+  border: none;
+  background: #444;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  transition: background 0.2s;
+}
+button:hover {
+  background: #ededed;
+  color: #181818;
+}
+footer {
+  text-align: center;
+  padding: 1.5em 0;
+  background: #222;
+  color: #ededed;
+  font-size: 1em;
+  margin-top: 2em;
+  border-radius: 0 0 12px 12px;
+}
+@media (max-width: 600px) {
+  section {
+    padding: 1em;
+    margin: 1em;
+  }
+  .grid img {
+    height: 120px;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+}
